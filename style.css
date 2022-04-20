@@ -30,6 +30,10 @@ header {
     align-items: center;
     padding: 0 25px 25px 25px;
 }
+#pic img {
+    width: 100%;
+    height: 100%;
+}
 #text-section {
     display: flex;
     flex-direction: column;
@@ -251,11 +255,23 @@ input[type=text], select, textarea {
     justify-content: center;
   }
 
-  /* Use a media query to add a break point at 800px: */
 @media only screen and (max-width: 1000px) {
     #triplelogo {
         flex-direction: column;
-    
+        width:80%;
     }
- 
+    #services {
+        align-items: center;
+    }
+    #services h2 {
+        
+    }
+    #about {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #continut {
+        width: 100vw;
+        margin: 0 0 ;
+    }
 }
