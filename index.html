@@ -13,7 +13,7 @@
             <a href="#default" class="logo">
                 <img src="logo11.png" alt="Logo">
             </a> 
-            <button id="bts"><i class="fa-solid fa-bars"></i></button>
+            <button id="bts" onclick="hamburgerMenu()"><i class="fa-solid fa-bars"></i></button>
             <div class="links" id="myLinks">
               <a class="active" href="#home">Home</a>
               <a href="#servicii">Servicii</a>
@@ -252,11 +252,14 @@
     <script>
         function hamburgerMenu() {
             let x = document.getElementById("myLinks")
+            let bts = document.getElementById("bts")
             if (x.style.display === "block") {
                 x.style.display = "none"
+                bts.innerHTML = `<i class="fa-solid fa-bars"></i>`
             }
             else {
                 x.style.display = "block"
+                bts.innerHTML = `<i class="fa-solid fa-xmark"></i>`
             }
         }
 

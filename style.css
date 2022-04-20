@@ -15,6 +15,10 @@ header {
 }
 #bts {
     display: none;
+    float: right;
+}
+#myLinks {
+    display: block;
 }
 #continut {
     background-color: #FFFFF0;
@@ -313,6 +317,9 @@ input[type=text], select, textarea {
     #myLinks {
         display: none;
         flex-direction: column;
+    }
+    #myLinks a {
+        width: 100%;
     }
 }
 
