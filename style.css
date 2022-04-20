@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,6 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap:10px;
     padding: 0 25px 25px 25px;
 }
 #pic img {
@@ -100,14 +102,9 @@ header {
     width: 95%;
     margin-top: 20px;
     margin-left:20px;
+    gap:10px
 
 
-}
-#doic, #treic, #patruc, #sasec  {
-   border-left:none;
-}
-#cincic, #sasec {
-    border-top:none;
 }
 .adjust {
     display: flex;
@@ -262,9 +259,22 @@ input[type=text], select, textarea {
     }
     #services {
         align-items: center;
+        width:100%;
+        height: auto;
+        padding: 20px;
     }
     #services h2 {
-        
+        margin-top: 20px;
+
+    }
+    #sixcolumn {
+        height:auto;
+        width:100%;
+        margin: 40px 0;
+    }
+    .coloana3 {
+        width:80%;
+        padding:10px;
     }
     #about {
         align-items: flex-start;
@@ -273,5 +283,23 @@ input[type=text], select, textarea {
     #continut {
         width: 100vw;
         margin: 0 0 ;
+    }
+    #Contact {
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        
+    }
+    #contactinfo {
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #info {
+        width:100%;
+    }
+    .container {
+        width: 100%;
     }
 }
