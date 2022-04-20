@@ -13,6 +13,7 @@
             <a href="#default" class="logo">
                 <img src="logo11.png" alt="Logo">
             </a> 
+            <button id="bts"><i class="fa-solid fa-bars"></i></button>
             <div class="links" id="myLinks">
               <a class="active" href="#home">Home</a>
               <a href="#servicii">Servicii</a>
@@ -207,7 +208,7 @@
                     <h4>Adresa postala</h4>
                     <p>Strada August nr. 31, ap.20, Alba Iulia, jud. Alba</p>
                     <h4>Tel.:</h4><p> 07342424945</p>
-                    <p><h4>Email.:</h4> catalin.tudoreanu1@gmail.com</p>
+                    <h4>Email.:</h4><p> catalin.tudoreanu1@gmail.com</p>
                     <h4>Social media:</h4><br>
                     <div>
                         <img src="logo11.png" alt="">
@@ -247,5 +248,18 @@
         </footer>
 
     </div>
+    <script src="https://kit.fontawesome.com/3ea10eb57e.js" crossorigin="anonymous"></script>
+    <script>
+        function hamburgerMenu() {
+            let x = document.getElementById("myLinks")
+            if (x.style.display === "block") {
+                x.style.display = "none"
+            }
+            else {
+                x.style.display = "block"
+            }
+        }
+
+    </script>
 </body>
 </html>
